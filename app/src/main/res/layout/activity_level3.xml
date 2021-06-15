@@ -26,8 +26,8 @@
 
     <Button
         android:id="@+id/getRes"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
         android:text="Get Result"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="207dp"
-        android:layout_height="107dp"
+        android:layout_width="250dp"
+        android:layout_height="136dp"
         android:background="#AFB42B"
         android:fontFamily="monospace"
         android:gravity="center"
@@ -47,14 +47,15 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
+        android:layout_width="204dp"
+        android:layout_height="59dp"
         android:layout_marginBottom="28dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
