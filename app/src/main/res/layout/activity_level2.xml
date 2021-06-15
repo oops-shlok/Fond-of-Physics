@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C2351"
+    tools:context=".Level_2">
+
+    <TextView
+        android:id="@+id/practise"
+        android:layout_width="371dp"
+        android:layout_height="97dp"
+        android:background="#0097A7"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Level 2  : Practise "
+        android:textColor="#FBC02D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="364dp"
+        android:layout_height="47dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Enter calculated value of Lorentz Force :"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speed"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/speed"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <EditText
+        android:id="@+id/lorentz"
+        android:layout_width="294dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview5"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="364dp"
+        android:layout_height="47dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Enter the value of speed, v  :"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="154dp"
+        android:layout_height="41dp"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lorentz"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="263dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="--"
+        android:textColor="#FBC02D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="252dp"
+        android:layout_height="45dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="The correct answer is : "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check"
+        app:layout_constraintVertical_bias="0.634" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
