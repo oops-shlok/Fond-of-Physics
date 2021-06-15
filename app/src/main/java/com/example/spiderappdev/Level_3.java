@@ -8,40 +8,43 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class Level_3 extends AppCompatActivity {
     TextView result;
+    TextView time;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level3);
-        Button getResult = findViewById(R.id.getRes);
         result=findViewById(R.id.result);
-        getResult.setOnClickListener(new View.OnClickListener() {
+        Button getRes = findViewById(R.id.getRes);
+        time=findViewById(R.id.textView11);
+        getRes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Calendar t = Calendar.getInstance();
-                int h = t.get(Calendar.HOUR);
-                int m = t.get(Calendar.MINUTE);
-                int s = t.get(Calendar.SECOND);
-                double sp=getSpifactor(h,m,s);
-                result.setText(String.valueOf(sp));
+                TimeZone timeZone = TimeZone.getTimeZone("Asia/Delhi");
+                Calendar calendar = Calendar.getInstance(timeZone);
+                int h = calendar.get(Calendar.HOUR);
+                int m = calendar.get(Calendar.MINUTE);
+                int s = calendar.get(Calendar.SECOND);
+                double spi=calculatespi(h,m,s);
+                time.setText(String.valueOf(h)+":"+String.valueOf(m)+":"+String.valueOf(s));
+                result.setText(String.valueOf(spi));
             }
         });
     }
-    static int factorial(int n){
+    static int factorial(double n){
         int x=1;
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=n;i++) {
             x=x*i;
         }
         return x;
     }
-    double getSpifactor(int h, int m, int s){
-        double spi = (factorial(h))/((m*m*m)+(s));
-        result.setText(String.valueOf((spi)));
-        return spi;
+    static double calculatespi(double h, double m, double s){
+        double spivalue = (factorial(h)/((m*m*m)+s));
+        return spivalue;
     }
-
 }
