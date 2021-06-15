@@ -55,14 +55,14 @@
 
     <Button
         android:id="@+id/calculate"
-        android:layout_width="131dp"
-        android:layout_height="47dp"
+        android:layout_width="203dp"
+        android:layout_height="55dp"
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lorentz"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/result"
@@ -76,21 +76,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.863" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="247dp"
         android:layout_height="53dp"
         android:fontFamily="serif-monospace"
-        android:text="Lorentz Force :"
         android:gravity="center"
+        android:text="Lorentz Force :"
         android:textColor="#AFB42B"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculate"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.274" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
