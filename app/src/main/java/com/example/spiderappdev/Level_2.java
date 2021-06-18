@@ -1,7 +1,5 @@
 package com.example.spiderappdev;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,9 +7,10 @@ import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Level_2 extends AppCompatActivity {
     double v;
@@ -38,16 +37,20 @@ public class Level_2 extends AppCompatActivity {
                 double v = Double.parseDouble(inputLor);
                 double lorz = Double.parseDouble(lorentzcal);
                 double gamma = calcluatelorentz(v);
-                if(v>=c || v<0){
-                    Toast.makeText(Level_2.this,"Invalid Input of speed",Toast.LENGTH_SHORT).show();
+                if(input== null || input2==null){
+                    Toast.makeText(Level_2.this,"Please Enter value",Toast.LENGTH_SHORT).show();
                 }else{
-                    if(gamma == lorz){
-                        Toast.makeText(Level_2.this,"Yay! Your Answer is Correct ! ✌🏻",Toast.LENGTH_SHORT).show();
-                        result.setBackgroundColor(Color.GREEN);
+                    if(v>=c || v<0){
+                        Toast.makeText(Level_2.this,"Invalid Input of speed",Toast.LENGTH_SHORT).show();
                     }else{
-                        Toast.makeText(Level_2.this,"Oops! Your Answer is Incorrect ! 🙁",Toast.LENGTH_SHORT).show();
-                        result.setBackgroundColor(Color.RED);
-                        vibe.vibrate(100);
+                        if(gamma == lorz){
+                            Toast.makeText(Level_2.this,"Yay! Your Answer is Correct ! ✌🏻",Toast.LENGTH_SHORT).show();
+                            result.setBackgroundColor(Color.GREEN);
+                        }else{
+                            Toast.makeText(Level_2.this,"Oops! Your Answer is Incorrect ! 🙁",Toast.LENGTH_SHORT).show();
+                            result.setBackgroundColor(Color.RED);
+                            vibe.vibrate(100);
+                        }
                     }
                 }
             }

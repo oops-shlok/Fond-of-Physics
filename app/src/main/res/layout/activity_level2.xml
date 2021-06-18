@@ -33,13 +33,13 @@
         android:gravity="center"
         android:text="Enter calculated value of Lorentz Force :"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/speed"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <EditText
         android:id="@+id/speed"
@@ -75,31 +75,31 @@
         android:gravity="center"
         android:text="Enter the value of speed, v  :"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.244" />
 
     <Button
         android:id="@+id/check"
-        android:layout_width="154dp"
-        android:layout_height="41dp"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
         android:text="Check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lorentz"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.085" />
 
     <TextView
         android:id="@+id/answer"
         android:layout_width="263dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:text="--"
@@ -120,9 +120,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/answer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/check"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.426" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

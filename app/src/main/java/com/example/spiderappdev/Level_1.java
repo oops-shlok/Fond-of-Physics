@@ -1,13 +1,13 @@
 package com.example.spiderappdev;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Level_1 extends AppCompatActivity {
     double v;
@@ -27,7 +27,10 @@ public class Level_1 extends AppCompatActivity {
                 String inputLor= input.getText().toString();
                 double v = Double.parseDouble(inputLor);
                 calculatebtnLor(v);
-                if(v>=300000000 || v<=0 ){
+                if(input.equals(null)){
+                    Toast.makeText(Level_1.this,"Enter a value",Toast.LENGTH_SHORT).show();
+                }
+                if(v>=c || v<=0 ){
                     Toast.makeText(Level_1.this,"Invalid Input In v",Toast.LENGTH_SHORT).show();
                 }
             }
