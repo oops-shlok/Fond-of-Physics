@@ -27,7 +27,7 @@ public class Level_1 extends AppCompatActivity {
                 String inputLor= input.getText().toString();
                 double v = Double.parseDouble(inputLor);
                 calculatebtnLor(v);
-                if(input.equals(null)){
+                if(inputLor.equals(null)){
                     Toast.makeText(Level_1.this,"Enter a value",Toast.LENGTH_SHORT).show();
                 }
                 if(v>=c || v<=0 ){
