@@ -37,7 +37,7 @@ public class Level_2 extends AppCompatActivity {
                 double v = Double.parseDouble(inputLor);
                 double lorz = Double.parseDouble(lorentzcal);
                 double gamma = calcluatelorentz(v);
-                if(input.equals(null) || input2.equals(null){
+                if(inputLor.equals(null) || lorentzcal.equals(null){
                     Toast.makeText(Level_2.this,"Please Enter value",Toast.LENGTH_SHORT).show();
                 }else{
                     if(v>=c || v<0){
